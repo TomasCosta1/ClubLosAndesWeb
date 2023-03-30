@@ -10,7 +10,7 @@ body{
     background-color: #EDEDED;
 }
 
-header{
+#topHeader{
     background-image: url("img/banner.png");
     background-size: auto;
     background-repeat: no-repeat;
@@ -20,7 +20,44 @@ header{
     line-height: 4.37rem;
     letter-spacing: 0.1em;
     box-shadow: 0px 0px 40px black;
-    margin-bottom: 4.37rem;
+}
+
+#botHeader{
+  background-color: #BA0D05;
+  margin-bottom: 20px;
+}
+
+.navmenu-list{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
+}
+
+.menu-item{
+  padding: 10px 20px;
+  color: white;
+  font-weight: lighter;
+  position: relative;
+}
+
+.menu-item:hover{
+  background-color: #940000;
+  cursor: pointer;
+}
+
+/* #burgerMenu{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+} */
+
+.offcanvas-header{
+  background-color: #FF0F04;
+}
+
+.offcanvas-body{
+  background-color: #BA0D05;
 }
 
 #logoCala{
@@ -85,6 +122,10 @@ header h1{
     display: flex;
     justify-content: center;
     padding-bottom: 1.87rem;
+}
+
+#logoMuniLomas{
+  width: 200px;
 }
 
 #footerRedes{
@@ -242,13 +283,21 @@ header h1{
         display: none;
     }
 
-    header{
+    #topHeader{
         background-size: 100% 100%;
+        margin-bottom: 20px;
+    }
+
+    #botHeader{
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      border-radius: 7px;
     }
 
     #logoCala{
-        width: 3.5rem;
-        margin: 15px;
+        width: 5rem;
+        margin: 10px;
     }
 
     #sectionClub img, #logoMuniLomas{
