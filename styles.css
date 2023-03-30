@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EDEDED;
+}
+
+header{
+    background-image: url("img/banner.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 2px 4px #000000;
+    line-height: 4.37rem;
+    letter-spacing: 0.1em;
+    box-shadow: 0px 0px 40px black;
+    margin-bottom: 4.37rem;
+}
+
+#logoCala{
+    width: 7.93rem;
+    margin: 1.25rem;
+}
+
+header p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 2.93rem;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+}
+
+header h1{
+    font-size: 3.75rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FF0F04;
+}
+
+#sectionClub{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+#sectionClub img{
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.75);
+}
+
+#sectionClub img:hover{
+    transform: scale(1.01);
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+}
+
+#clubTop, #clubBot{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    align-content: center;
+}
+
+#containerClub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+#footerWave{
+    width: 100%;
+    position: relative;
+    bottom: -4px;
+}
+
+#footerSponsors{
+    background-color: #BA0D05;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.87rem;
+}
+
+#footerRedes{
+    background-color: #FF0F04;
+    box-shadow: 0px 0px 40px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.62rem 1.25rem;
+}
+
+#icons p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#listRedes{
+    display: flex;
+    gap: 0.93rem;
+    list-style: none;
+    font-size: 2rem;
+    padding-left: 0px;
+}
+
+#listRedes a{
+    color: white;
+}
+
+@media (max-width: 780px){
+
+    header p, header h1{
+        display: none;
+    }
+
+    header{
+        background-size: 100% 100%;
+    }
+
+    #logoCala{
+        width: 3.5rem;
+        margin: 15px;
+    }
+
+    #sectionClub img, #logoMuniLomas{
+        width: 18.75rem;
+    }
+
+    #icons p, #listRedes, #footerRedes{
+        font-size: 1rem;
+    }
+}
