@@ -36,6 +36,7 @@ header{
   justify-content: space-evenly;
   align-content: center;
   list-style: none;
+  margin-bottom: 0px;
 }
 
 .menu-item{
@@ -118,9 +119,18 @@ header h1{
     flex-direction: column;
 }
 
+.mainImg{
+  width: 500px;
+}
+
+.secondaryImg{
+  width: 350px;
+}
+
 #sectionClub img{
     box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.75);
     border-radius: 3px;
+    width: 100%;
 }
 
 #sectionClub img:hover{
@@ -339,12 +349,13 @@ header h1{
         margin: 10px;
     }
 
-    #sectionClub img{
-        width: 18.75rem;
+    #sectionClub img, .mainImg, .secondaryImg{
+        width: 300px;
+        height: 300px;
     }
 
     #icons p, #listRedes{
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     }
 
     #footerRedes{
