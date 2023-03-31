@@ -46,18 +46,22 @@ body{
   cursor: pointer;
 }
 
-/* #burgerMenu{
-  position: fixed;
-  top: 0px;
-  right: 0px;
-} */
+#burgerMenu{
+  display: none;
+}
 
 .offcanvas-header{
-  background-color: #FF0F04;
+  background-color: #BA0D05;
+  color: white;
 }
 
 .offcanvas-body{
-  background-color: #BA0D05;
+  background-color: #EDEDED;
+}
+
+#logoCalaBurger{
+  width: 35px;
+  margin-right: 20px;
 }
 
 #logoCala{
@@ -113,7 +117,7 @@ header h1{
 
 #footerWave{
     width: 100%;
-    position: relative;
+    /* position: relative; */
     bottom: -4px;
 }
 
@@ -180,7 +184,7 @@ header h1{
     width: 200px;
     height: 60px;
     position: relative;
-    z-index: 1;
+    z-index: -1;
   }
 
   .circle {
@@ -289,22 +293,30 @@ header h1{
     }
 
     #botHeader{
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      border-radius: 7px;
+      display: none;
+    }
+
+    #burgerMenu{
+      display: block;
+      position: fixed;
+      top: 14px;
+      right: 0px;
     }
 
     #logoCala{
-        width: 5rem;
+        width: 4rem;
         margin: 10px;
     }
 
-    #sectionClub img, #logoMuniLomas{
+    #sectionClub img{
         width: 18.75rem;
     }
 
-    #icons p, #listRedes, #footerRedes{
-        font-size: 1rem;
+    #icons p, #listRedes{
+        font-size: 0.8rem;
+    }
+
+    #footerRedes{
+      font-size: 0.7rem;
     }
 }
