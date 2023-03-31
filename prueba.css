@@ -1,0 +1,43 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+  /* Estilos para cada elemento de la cuadrícula */
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Estilos para la imagen */
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .grid-item-main{
+    /* min-width: 500px; */
+  }
+
+  /* Estilos para el título */
+  .grid-item .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: bottom 0.3s ease-out;
+  }
+
+  /* Animación para el título */
+  .grid-item:hover .title {
+    bottom: -50px;
+  }

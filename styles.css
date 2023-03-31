@@ -183,6 +183,10 @@ header h1{
     padding: 0.62rem 1.25rem;
 }
 
+#logoCalaFooter{
+  width: 100px;
+}
+
 #icons p{
     font-size: 2rem;
     font-weight: bold;
@@ -319,6 +323,8 @@ header h1{
     transform: scale(1.1);
     transition: transform 300ms ease-in-out;
 }
+
+
 
 
 @media (max-width: 780px){
