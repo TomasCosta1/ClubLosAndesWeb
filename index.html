@@ -17,55 +17,57 @@
                 <p>Club Atletico</p>
                 <h1>LOS ANDES</h1>
             </div>
-        </div>
-        <nav id="botHeader">
-            <ul class="navmenu-list">
-                <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Noticias</li>
-                <li class="menu-item" onclick="location.href = 'index.html'">El Club</li>
-                <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Futbol</li>
-                <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Deportes</li>
-                <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Prensa</li>
-                <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Socios</li>
-                <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Tienda</li>
-            </ul>
-        </nav>
-        <nav class="navbar  bg-opacity-10 " id="burgerMenu">
-            <div class="container-fluid">
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/Escudo.png" alt="Escudo CALA" id="logoCalaBurger">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="views/proximamente.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">El Club</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="views/proximamente.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="views/proximamente.html">Action</a></li>
-                        <li><a class="dropdown-item" href="views/proximamente.html">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+            <nav class="navbar" id="burgerMenu">
+                <div class="container-fluid">
+                <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="fa-solid fa-bars fa-xl" style="color: white;"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/Escudo.png" alt="Escudo CALA" id="logoCalaBurger">Menú</h5>
+                        <button type="button" class= "btn fa-solid fa-xmark fa-2xl" style="color: #ffffff;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="views/proximamente.html">Inicio</a>
                         </li>
-                        <li><a class="dropdown-item" href="views/proximamente.html">Something else here</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">El Club</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="views/proximamente.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="views/proximamente.html">Action</a></li>
+                            <li><a class="dropdown-item" href="views/proximamente.html">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="views/proximamente.html">Something else here</a></li>
+                            </ul>
+                        </li> -->
                         </ul>
-                    </li> -->
-                    </ul>
+                    </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
+    <nav class="sticky-top" id="botHeader">
+        <ul class="navmenu-list">
+            <img src="img/Escudo.png" alt="logo CALA" class="logoCalaNavScroll">
+            <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Noticias</li>
+            <li class="menu-item" onclick="location.href = 'index.html'">El Club</li>
+            <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Futbol</li>
+            <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Deportes</li>
+            <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Prensa</li>
+            <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Socios</li>
+            <li class="menu-item" onclick="location.href = 'views/proximamente.html'">Tienda</li>
+        </ul>
+    </nav>
     <main>
+        <h2 class="titleSection"><span class="firstWord">El</span> Club</h2>
         <div id="sectionClub">
             <section id="clubTop">
                 <article id="historia">
@@ -117,5 +119,6 @@
     </footer>
     <script src="https://kit.fontawesome.com/50303851c6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
