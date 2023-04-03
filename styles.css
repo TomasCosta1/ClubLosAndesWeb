@@ -11,9 +11,6 @@ body{
   background-color: #EDEDED;
 }
 
-header{
-  position: relative;
-}
 #topHeader{
     background-image: url("img/banner.png");
     background-size: auto;
@@ -99,6 +96,11 @@ header h1{
     font-size: 3.75rem;
     font-weight: bold;
     color: #FF0F04;
+}
+
+.currentSection{
+  font-weight: bold;
+  background-color: #940000;
 }
 
 .titleSection{
@@ -204,17 +206,11 @@ header h1{
     color: white;
 }
 
-.landingpage{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 #textProx{
     color: #BA0D05;
-    width: 300px;
+    max-width: 400px;
     text-align: center;
+    margin-top: 50px;
 }
 
 #mainProx{
@@ -316,6 +312,7 @@ header h1{
 .back{
     font-size: 50px;
     color: #BA0D05;
+    margin-bottom: 25px;
 }
 
 .back:hover{
@@ -383,4 +380,19 @@ header h1{
       bottom: 0px;
       right: 10px;
     }
+
+    .landingpage{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+}
+
+#pruebita{
+  overflow: hidden;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  left: 200px;
 }
