@@ -19,12 +19,12 @@
             </div>
             <nav class="navbar" id="burgerMenu">
                 <div class="container-fluid">
-                <button class="btn btn-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="fa-solid fa-bars fa-xl" style="color: white;"></span>
+                <button class="btn btn-transparent" id="btnBurgerMenuOpen" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="fa-solid fa-bars fa-xl" style="color: white;"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/Escudo.png" alt="Escudo CALA" id="logoCalaBurger">Menú</h5>
-                        <button type="button" class= "btn fa-solid fa-xmark fa-2xl" style="color: #ffffff;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class= "btn fa-solid fa-xmark fa-2xl" id="btnBurgerMenuClose" style="color: #ffffff;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -91,28 +91,38 @@
         <div id="sectionClub">
             <section id="clubTop">
                 <article class="mainImg" id="historia">
-                    <img src="img/Historia.png" alt="" onclick="location.href = 'views/proximamente.html'">
+                    <img src="img/elClub/Historia.png" alt="Historia">
+                    <h3 class="titleArticleClub">Historia</h3>
                 </article>
                 <div id="containerClub">
                     <article class="secondaryImg" id="estadio">
-                        <img src="img/Estadio.png" alt="" onclick="location.href = 'views/proximamente.html'">
+                        <img src="img/elClub/Estadio.png" alt="Estadio">
+                        <h3 class="titleArticleClub">Estadio</h3>
                     </article>
                     <article class="secondaryImg" id="estatuto">
-                        <img src="img/Estatuto.png" alt="" onclick="location.href = 'views/proximamente.html'">
+                        <img src="img/elClub/Estatuto.png" alt="Estatuto">
+                        <a href="views/proximamente.html"></a>
+                        <h3 class="titleArticleClub">Estatuto</h3>
                     </article>
                 </div>
             </section>
             <section id="clubBot">
                 <div id="containerClub">
                     <article class="secondaryImg" id="comDirec">
-                        <img src="img/ComisionDirectiva.png" alt="" onclick="location.href = 'views/proximamente.html'">
+                        <img src="img/elClub/Comision Directiva.png" alt="Comisión Directiva">
+                        <a href="views/proximamente.html"></a>
+                        <h3 class="titleArticleClub">Comisión Directiva</h3>
                     </article>
                     <article class="secondaryImg" id="SedeSoc">
-                        <img src="img/SedeSocial.png" alt="" onclick="location.href = 'views/proximamente.html'">
+                        <img src="img/elClub/Sede social.png" alt="Sede Social">
+                        <a href="views/proximamente.html"></a>
+                        <h3 class="titleArticleClub">Sede Social</h3>
                     </article>
                 </div>
                 <article class="mainImg" id="Protogen">
-                    <img src="img/ProtocoloDeGenero.png" alt="" onclick="location.href = 'views/proximamente.html'">
+                    <img src="img/elClub/Protocolo de genero.png" alt="Protocolo de género">
+                    <a href="views/proximamente.html"></a>
+                    <h3 class="titleArticleClub">Protocolo de género</h3>
                 </article>
             </section>
         </div>
