@@ -11,6 +11,38 @@ body{
   background-color: #EDEDED;
 }
 
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f00; /* fondo rojo */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+.hide-preloader{
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.preloader img {
+	max-width: 100px;
+	height: auto;
+}
+
+main {
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+}
+
+.main-show {
+	opacity: 1;
+}
+
 #topHeader{
     background-image: url("img/banner.png");
     background-size: auto;

@@ -1,3 +1,15 @@
+window.addEventListener('load', function() {
+	// Esconder el preloader
+	document.querySelector('.preloader').classList.add('hide-preloader');
+	// Mostrar el contenido
+	document.querySelector('main').classList.add('main-show');
+  this.setInterval(quitarPreloader, 2000)
+});
+
+const quitarPreloader=()=>{
+  document.querySelector('.preloader').style.display = "none"
+}
+
 window.addEventListener('scroll', function() {
     var image = document.querySelector(".logoCalaNavScroll");
     var scrollPosition = window.scrollY;
