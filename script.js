@@ -27,15 +27,26 @@ window.addEventListener('scroll', function() {
   let btnBurgerMenuClose = document.getElementById('btnBurgerMenuClose');
 
   btnBurgerMenuOpen.addEventListener('click', function(){
-    let main = document.querySelector('main');
-    let footer = document.querySelector('footer');
-    main.style.display = 'none';
-    footer.style.display = 'none'
+    let mainImgs = document.getElementsByClassName('mainImg')
+    let secondaryImgs = document.getElementsByClassName('secondaryImg')
+    for(i=0; i<mainImgs.length; i++){
+      mainImgs[i].style.zIndex = '-1'
+    }
+    for(i=0; i<secondaryImgs.length; i++){
+      secondaryImgs[i].style.zIndex = '-1'
+    }
   })
 
+  
   btnBurgerMenuClose.addEventListener('click', function(){
-    let main = document.querySelector('main');
-    let footer = document.querySelector('footer');
-    main.style.display = 'inline'
-    footer.style.display = 'inline'
+    let mainImgs = document.getElementsByClassName('mainImg')
+    let secondaryImgs = document.getElementsByClassName('secondaryImg')
+    setTimeout(function(){
+      for(i=0; i<mainImgs.length; i++){
+        mainImgs[i].style.zIndex = '0'
+      }
+      for(i=0; i<secondaryImgs.length; i++){
+        secondaryImgs[i].style.zIndex = '0'
+      }
+    }, 500)
   })
