@@ -372,7 +372,34 @@ header h1{
     transition: transform 300ms ease-in-out;
 }
 
+/* HTML PROTOCOLO DE GENERO */
 
+#mainProtocoloGenero{
+  display: flex;
+  justify-content: center;
+}
+
+.contentProtocolo{
+  width: 900px;
+  text-align: justify;
+  padding: 20px 40px;
+}
+
+.contentProtocolo .subtitle, .contentProtocolo h2{
+  text-align: center;
+  font-weight: bold;
+}
+
+.contentProtocolo h3{
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+.contentProtocolo hr{
+  color: #BA0D05;
+  border: 1px solid #BA0D05;
+  opacity: 1;
+}
 
 
 @media (max-width: 780px){
