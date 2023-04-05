@@ -393,6 +393,7 @@ header h1{
 .contentProtocolo h3{
   font-size: 1.5rem;
   margin-top: 50px;
+  text-align: start;
 }
 
 .contentProtocolo hr{
@@ -408,14 +409,18 @@ header h1{
         display: none;
     }
 
+    header{
+      position: sticky;
+      top: 0px;
+      z-index: 10;
+    }
+
     #topHeader{
         background-size: 100% 100%;
         background-image: none;
         background-color: #BA0D05;
         margin-bottom: 20px;
         justify-content: space-between;
-        position: sticky;
-        top: 0px;
     }
 
     #botHeader{
@@ -423,7 +428,7 @@ header h1{
     }
 
     #burgerMenu{
-      display: block;
+      display: inline;
     }
 
     #logoCala, #logoCalaFooter{
