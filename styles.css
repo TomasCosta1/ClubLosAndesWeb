@@ -379,27 +379,71 @@ header h1{
   justify-content: center;
 }
 
-.contentProtocolo{
+.contentDefault{
   width: 900px;
   text-align: justify;
   padding: 20px 40px;
 }
 
-.contentProtocolo .subtitle, .contentProtocolo h2{
+.contentDefault .subtitle, .contentDefault h2{
   text-align: center;
   font-weight: bold;
 }
 
-.contentProtocolo h3{
+.contentDefault h3{
   font-size: 1.5rem;
   margin-top: 50px;
   text-align: start;
 }
 
-.contentProtocolo hr{
+.contentDefault hr{
   color: #BA0D05;
   border: 1px solid #BA0D05;
   opacity: 1;
+}
+
+.articleDefault img{
+  width: 100%;
+  border: 3px solid #BA0D05;
+  border-radius: 3px 3px 3px 0px;
+}
+
+.btnReadMore, .btnReadLess{
+  width: 110px;
+  height: 45px;
+  background-color: transparent;
+  color: #BA0D05;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.btnReadMore{
+  border: 2px solid #BA0D05;
+  border-radius: 0px 0px 5px 5px;
+  border-top-width: 0px;
+}
+
+.btnReadLess{
+  border: 2px solid #BA0D05;
+  border-radius: 0px 5px 0px 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+
+.btnReadMore:hover, .btnReadLess:hover{
+  background-color: #BA0D05;
+  color: white;
+  transition: 300ms;
+}
+
+.containerReadMore{
+  display: none;
+  border: 3px solid #BA0D05;
+  border-radius: 0px 0px 3px 3px;
+  border-top-width: 0px;
+}
+.containerReadMore p{
+  padding: 10px;
 }
 
 /* HTML ESTATUTO */

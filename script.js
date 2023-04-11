@@ -50,3 +50,20 @@ window.addEventListener('scroll', function() {
       }
     }, 500)
   })
+
+// SISTEMA READ MORE
+function readMore(event){
+  let contenedor = event.target.parentNode
+  let textoMostrar = contenedor.querySelector('.containerReadMore')
+  textoMostrar.style.display = "block"
+  event.target.style.display = 'none'
+}
+
+function readLess(event){
+  const btnReadMore = (event.target.parentNode).parentNode.querySelector('.btnReadMore')
+  let contenedor = (event.target.parentNode).parentNode
+  let textoMostrar = contenedor.querySelector('.containerReadMore')
+  textoMostrar.style.display = "none"
+  event.target.style.display = 'block'
+  btnReadMore.style.display = 'block'
+}
