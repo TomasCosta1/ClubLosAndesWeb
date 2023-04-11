@@ -406,6 +406,7 @@ header h1{
   width: 100%;
   border: 3px solid #BA0D05;
   border-radius: 3px 3px 3px 0px;
+  margin-top: 10px;
 }
 
 .btnReadMore, .btnReadLess{
